@@ -4,6 +4,7 @@
 */
 
 function isPalindrome(str) {
+  //let startTime = Date.now();
   str = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
 
   let left = 0;
@@ -17,6 +18,21 @@ function isPalindrome(str) {
   }
 
   return true;
+  //let endTime = Date.now();
+  //console.log("Time for inbuilt: "+elapsedTime);
+
+  // let startTime = Date.now();
+  // let fstr = str.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();
+  // let revstr = fstr.split('').reverse().join('');
+  // let endTime = Date.now();
+
+  // let elapsedTime = endTime - startTime;
+
+  // console.log('Time for inbuilt: ' + elapsedTime);
+
+  // if (fstr == revstr) return true;
+
+  // return false;
 }
 
 module.exports = isPalindrome;

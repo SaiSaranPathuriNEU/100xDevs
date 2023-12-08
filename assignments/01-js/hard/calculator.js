@@ -22,8 +22,6 @@ class Calculator {
   }
 
   add(num) {
-    console.log(num);
-    console.log(this.result);
     this.result += num;
   }
 
